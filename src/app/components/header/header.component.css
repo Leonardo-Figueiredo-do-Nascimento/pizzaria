@@ -1,0 +1,10 @@
+.header{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+.header img{
+    height: 7vh;
+    width: 10vw;
+}
