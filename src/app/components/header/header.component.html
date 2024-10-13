@@ -1,4 +1,9 @@
 <div class="header">
-    <img [src]="pizzaIcon">
-    <button><img [src]="deliveryIcon"></button>
+    <img [src]="pizzaIcon" id="pizza-logo"/>
+    <div class="delivery-div">
+        <div *ngIf="pedidoCount>0" id="pedido-counter">
+            <p>{{ pedidoCount > 10 ? '10+' : pedidoCount }}</p>
+        </div>
+        <button id="delivery-button"><img [src]="deliveryIcon" id="delivery-img"/></button>
+    </div>
 </div>
