@@ -1,0 +1,33 @@
+.home-div {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    position: relative;
+}
+
+.home-div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../../../public/assets/pizza-home-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.5);
+    z-index: -1; /* Fica atrás do texto */
+}
+
+.home-div p {
+    height: auto;
+    width: 70%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 9vw;
+    color: rgb(221, 221, 221);
+    z-index: 1;
+    position: relative; /* Para garantir que esteja acima do fundo */
+}

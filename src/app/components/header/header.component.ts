@@ -12,7 +12,7 @@ export class HeaderComponent {
     pizzaIcon = "./assets/pizza-icon.png";
     deliveryIcon = "./assets/delivery-icon.png";
 
-    pedidoCount: number = 1;
+    pedidoCount: number = 0;
 
     addPedido(): void{
       this.pedidoCount++;

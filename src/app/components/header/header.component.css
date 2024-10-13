@@ -5,7 +5,8 @@
     justify-content: space-between;
     background-color: rgb(187, 114, 19);
     position: sticky;
-    z-index: 1;
+    top: 0;
+    z-index: 1000;
 }
 #pizza-logo{
     height: 10vh;

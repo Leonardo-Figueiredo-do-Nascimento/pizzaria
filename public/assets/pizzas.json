@@ -1,0 +1,54 @@
+[
+    {
+        "sabor": "Mussarela",
+        "ingredientes": [
+            "Molho de tomate",
+            "Queijo muçarela",
+            "Orégano"
+        ],
+        "preco": 28.90
+    },
+    {
+        "sabor": "Pepperoni",
+        "ingredientes": [
+            "Molho de tomate",
+            "Queijo muçarela",
+            "Fatias de pepperoni"
+        ],
+        "preco": 34.90
+    },
+    {
+        "sabor": "Frango com Catupiry",
+        "ingredientes": [
+            "Molho de tomate",
+            "Queijo muçarela",
+            "Frango desfiado",
+            "Catupiry",
+            "Milho"
+        ],
+        "preco": 32.90
+    },
+    {
+        "sabor": "Portuguesa",
+        "ingredientes": [
+            "Molho de tomate",
+            "Queijo muçarela",
+            "Presunto",
+            "Ovos",
+            "Cebola",
+            "Azeitonas"
+        ],
+        "preco": 35.90
+    },
+    {
+        "sabor": "Quattro Queijos",
+        "ingredientes": [
+            "Molho de tomate",
+            "Queijo muçarela",
+            "Queijo gorgonzola",
+            "Queijo parmesão",
+            "Queijo provolone"
+        ],
+        "preco": 36.90
+    }
+]
