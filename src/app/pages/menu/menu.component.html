@@ -1,6 +1,20 @@
-<div>
+<div class="menu-div">
     <h2>Sabores</h2>
     <div class="sabores">
-        
+        @for (pizza of pizzas; track pizza){
+            <div class="pizza-card" >
+                <img [src]="pizza.pizzaImgUrl"/>
+                <p>{{pizza.sabor}}</p>
+                <input type="radio" name="pizza-sabor" [value]="pizza.sabor" (change)="onPizzaSelect(pizza.sabor)">
+            </div>
+        }
+        <div class="pizza-card">
+            <h3 id="h3-personalizavel">+</h3>
+            <p>Personalizada</p>
+            <input type="radio" name="pizza-sabor" value="Personalizada" (change)="onPizzaSelect('Personalizada')">
+        </div>
     </div>
 </div>
+@if (selectedPizza != null) {
+    <app-size></app-size>
+}

@@ -1,0 +1,64 @@
+.menu-div{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(39, 39, 39);
+    padding: 5vw;
+    z-index: -1;
+}
+.menu-div h2{
+    height: 10vh;
+    width: auto;
+    color: white;
+    font-size: 5vw;
+    margin-bottom: 10vh;
+    overflow-y: hidden;
+}
+
+.sabores{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    row-gap: 3vh;
+    column-gap: 2vw;
+    grid-template-rows: repeat(2,auto);
+}
+.pizza-card{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2vh 2vh 0 0;
+    background-color: rgb(78, 126, 59);
+}
+.pizza-card input{
+    height: 2vw;
+    width: 2vw;
+    margin: 2vh 0 2vh 0;
+}
+.pizza-card img, #h3-personalizavel{
+    height: 20vh;
+    width: 20vw;
+    border: 0.5vh solid white;
+    border-radius: 2vh 2vh 0 0;
+}
+#h3-personalizavel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15vw;
+    color: white;
+    overflow-y: hidden;
+}
+.pizza-card p{
+    height: auto;
+    width: auto;
+    font-size: 2vw;
+    color: white;
+    text-align: center;
+}

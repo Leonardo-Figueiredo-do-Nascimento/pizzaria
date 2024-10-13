@@ -6,6 +6,7 @@
             "Queijo muçarela",
             "Orégano"
         ],
+        "pizzaImgUrl": "./assets/pizzas/mussarela.webp",
         "preco": 28.90
     },
     {
@@ -15,6 +16,7 @@
             "Queijo muçarela",
             "Fatias de pepperoni"
         ],
+        "pizzaImgUrl": "./assets/pizzas/pepperoni.webp",        
         "preco": 34.90
     },
     {
@@ -26,6 +28,7 @@
             "Catupiry",
             "Milho"
         ],
+            "pizzaImgUrl": "./assets/pizzas/frango-catupiry.webp",
         "preco": 32.90
     },
     {
@@ -38,10 +41,11 @@
             "Cebola",
             "Azeitonas"
         ],
+            "pizzaImgUrl": "./assets/pizzas/portuguesa.jpg",
         "preco": 35.90
     },
     {
-        "sabor": "Quattro Queijos",
+        "sabor": "Quatro Queijos",
         "ingredientes": [
             "Molho de tomate",
             "Queijo muçarela",
@@ -49,6 +53,7 @@
             "Queijo parmesão",
             "Queijo provolone"
         ],
+        "pizzaImgUrl": "./assets/pizzas/quatro-queijos.avif",        
         "preco": 36.90
     }
 ]
