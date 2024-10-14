@@ -8,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrl: './personalize.component.css'
 })
 export class PersonalizeComponent {
+  addIngredient(){
 
+  }
+  removeIngredient(){
+    
+  }
+
+  addPizza():void{
+    
+  }
 }

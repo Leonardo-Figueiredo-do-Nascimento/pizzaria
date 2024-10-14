@@ -4,7 +4,7 @@
         <img src="./assets/pizza-size-icon.png" id="brotinho"/>
         <div class="tamanho-select">
             <p>+ R$5,00</p>
-            <input type="radio" name="tamanho-pizza" value="Brotinho">
+            <input type="radio" name="tamanho-pizza" value="Brotinho" (change)="onSizeSelect('Brotinho')">
         </div>
     </div>
     <div class="tamanhos">
@@ -12,7 +12,7 @@
         <img src="./assets/pizza-size-icon.png" id="média"/>
         <div class="tamanho-select">
             <p>+ R$10,00</p>
-            <input type="radio" name="tamanho-pizza" value="Média">
+            <input type="radio" name="tamanho-pizza" value="Média" (change)="onSizeSelect('Média')">
         </div>
     </div>
     <div class="tamanhos">
@@ -20,8 +20,12 @@
         <img src="./assets/pizza-size-icon.png" id="grande"/>
         <div class="tamanho-select">
             <p>+ R$15,00</p>
-            <input type="radio" name="tamanho-pizza" value="Grande">
+            <input type="radio" name="tamanho-pizza" value="Grande" (change)="onSizeSelect('Grande')">
         </div>
         
     </div>
 </div>
+
+@if (sizeSelected) {
+    <app-personalize></app-personalize>
+}

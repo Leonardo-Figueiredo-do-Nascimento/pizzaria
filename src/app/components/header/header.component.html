@@ -4,6 +4,6 @@
         <div *ngIf="pedidoCount>0" id="pedido-counter">
             <p>{{ pedidoCount > 10 ? '10+' : pedidoCount }}</p>
         </div>
-        <button id="delivery-button"><img [src]="deliveryIcon" id="delivery-img"/></button>
+        <a id="delivery-button" href="/ordem"><img [src]="deliveryIcon" id="delivery-img"/></a>
     </div>
 </div>
