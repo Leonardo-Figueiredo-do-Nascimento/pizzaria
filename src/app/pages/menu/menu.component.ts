@@ -22,7 +22,6 @@ export class MenuComponent {
   constructor(private service: PizzaService){
     this.service.getPizzaMenu().subscribe(data=>{
       this.pizzas = data;
-      console.log(this.pizzas)
     })
   }
 }

@@ -1,9 +1,9 @@
 <div class="header">
-    <img [src]="pizzaIcon" id="pizza-logo"/>
+    <a routerLink="/"><img [src]="pizzaIcon" id="pizza-logo"/></a>
     <div class="delivery-div">
         <div *ngIf="pedidoCount>0" id="pedido-counter">
             <p>{{ pedidoCount > 10 ? '10+' : pedidoCount }}</p>
         </div>
-        <a id="delivery-button" href="/ordem"><img [src]="deliveryIcon" id="delivery-img"/></a>
+        <a id="delivery-button" routerLink="/ordem"><img [src]="deliveryIcon" id="delivery-img"/></a>
     </div>
 </div>

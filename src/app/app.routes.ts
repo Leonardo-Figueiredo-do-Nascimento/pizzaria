@@ -4,5 +4,5 @@ import { OrderComponent } from './pages/order/order.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
-    {path: '/ordem', component: OrderComponent}
+    {path: 'ordem', component: OrderComponent}
 ];

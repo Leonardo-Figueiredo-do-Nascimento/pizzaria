@@ -8,9 +8,15 @@
     top: 0;
     z-index: 1000;
 }
+a{
+    height: auto;
+    width: auto;
+    overflow: hidden;
+}
 #pizza-logo{
     height: 10vh;
     width: 7vw;
+    cursor: pointer;
 }
 .delivery-div{
     height: auto;
