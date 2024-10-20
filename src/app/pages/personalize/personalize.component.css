@@ -76,6 +76,7 @@
     font-size: 1vw;
     font-weight: bold;
     background-color: green;
+    border-radius: 1vh;
     color: white;
     cursor: pointer;
 }
@@ -85,6 +86,7 @@
     font-size: 1vw;
     font-weight: bold;
     background-color: rgb(163, 2, 2);
+    border-radius: 1vh;
     color: white;
     cursor: pointer;
 }
@@ -96,7 +98,7 @@
     color: white;
     background-color: rgb(46, 141, 22);
     border: 0.2vw solid white ;
-    border-radius: 5vh;
+    border-radius: 3vh;
     cursor: pointer;
 }
 #concluir-button:hover{

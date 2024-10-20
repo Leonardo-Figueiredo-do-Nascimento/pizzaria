@@ -1,0 +1,19 @@
+.footer{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: rgb(228, 105, 4);
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.footer p{
+    height: auto;
+    width: auto;
+    color: white;
+    font-size: 3vw;
+    margin-right: 10vw;
+}
