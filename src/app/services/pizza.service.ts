@@ -24,18 +24,18 @@ export class PizzaService {
     this.pizza.sabor = sabor;
     this.aumentarPreço(valor);
   }
-
   setTamanho(tamanho:string,valor:number){
     this.pizza.tamanho = tamanho;
     this.aumentarPreço(valor);
   }
-
-  addAdicionais(adicional:string,valor:number){
-    this.pizza.adicionais.push(adicional);
-    this.aumentarPreço(valor);
+  addAdicionais(ingredientes: {ingrediente: string, valor: number}[]) {
+    ingredientes.forEach(ingredienteObj => {
+      this.pizza.adicionais.push(ingredienteObj.ingrediente);
+      this.aumentarPreço(ingredienteObj.valor);
+    });
   }
-  removeAdicionais(adicional:string,valor:number){
-    this.pizza.adicionais = this.pizza.adicionais.filter(a => a !== adicional);
-    this.diminuirPreço(valor);
+
+  getPizza():Pizza{
+    return this.pizza;
   }
 }

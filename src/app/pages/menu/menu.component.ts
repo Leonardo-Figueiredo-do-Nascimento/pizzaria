@@ -13,10 +13,10 @@ export class MenuComponent {
 
   pizzas: any;
 
-  selectedPizza: string | null = null;
+  selectedPizza: { sabor: string, valor: number } | null = null;
 
-  onPizzaSelect(sabor: string): void {
-    this.selectedPizza = sabor;
+  onPizzaSelect(sabor: string, valor: number): void {
+    this.selectedPizza = {sabor,valor};
   }
 
   constructor(private service: PizzaJSONService){

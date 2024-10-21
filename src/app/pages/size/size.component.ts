@@ -9,9 +9,9 @@ import { PersonalizeComponent } from '../personalize/personalize.component';
   styleUrl: './size.component.css'
 })
 export class SizeComponent {
-  sizeSelected: string | null = null;
+  sizeSelected: { tamanho: string, valor: number } | null = null;
 
-  onSizeSelect(tamanho: string): void {
-    this.sizeSelected = tamanho;
+  onSizeSelect(tamanho: string, valor: number): void {
+    this.sizeSelected = { tamanho, valor };
   }
 }

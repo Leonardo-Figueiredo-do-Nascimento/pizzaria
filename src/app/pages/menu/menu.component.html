@@ -6,14 +6,14 @@
                 <img [src]="pizza.pizzaImgUrl"/>
                 <p>{{pizza.sabor}}</p>
                 <p>R${{pizza.preco}}</p>
-                <input type="radio" name="pizza-sabor" [value]="pizza.sabor" (change)="onPizzaSelect(pizza.sabor)">
+                <input type="radio" name="pizza-sabor" [value]="pizza.sabor" (change)="onPizzaSelect(pizza.sabor,pizza.preco)">
             </div>
         }
         <div class="pizza-card">
             <h3 id="h3-personalizavel">+</h3>
             <p>Personalizada</p>
             <p>R$20.0</p>
-            <input type="radio" name="pizza-sabor" value="Personalizada" (change)="onPizzaSelect('Personalizada')">
+            <input type="radio" name="pizza-sabor" value="Personalizada" (change)="onPizzaSelect('Personalizada',20.00)">
         </div>
     </div>
 </div>
