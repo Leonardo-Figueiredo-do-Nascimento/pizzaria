@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PizzaService } from '../../services/pizza.service';
+import { PizzaJSONService } from '../../services/pizzaJSON.service';
 import { SizeComponent } from '../size/size.component';
 
 @Component({
@@ -19,7 +19,7 @@ export class MenuComponent {
     this.selectedPizza = sabor;
   }
 
-  constructor(private service: PizzaService){
+  constructor(private service: PizzaJSONService){
     this.service.getPizzaMenu().subscribe(data=>{
       this.pizzas = data;
     })

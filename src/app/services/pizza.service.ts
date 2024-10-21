@@ -1,17 +1,41 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Pizza } from '../models/pizza';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PizzaService {
+  private pizza: Pizza = {
+    sabor: '',
+    tamanho: '',
+    adicionais: [],
+    preço: 0.00
+  }
+  
+  constructor() {}
+  
+  aumentarPreço(valor:number){
+    this.pizza.preço += valor;
+  }
+  diminuirPreço(valor:number){
+    this.pizza.preço -= valor;
+  }
+  setSabor(sabor:string,valor:number){
+    this.pizza.sabor = sabor;
+    this.aumentarPreço(valor);
+  }
 
-  private pizzaUrl = "./assets/pizzas.json"
+  setTamanho(tamanho:string,valor:number){
+    this.pizza.tamanho = tamanho;
+    this.aumentarPreço(valor);
+  }
 
-  constructor(private client: HttpClient) {}
-
-  getPizzaMenu(): Observable<any>{
-    return this.client.get<any>(this.pizzaUrl)
+  addAdicionais(adicional:string,valor:number){
+    this.pizza.adicionais.push(adicional);
+    this.aumentarPreço(valor);
+  }
+  removeAdicionais(adicional:string,valor:number){
+    this.pizza.adicionais = this.pizza.adicionais.filter(a => a !== adicional);
+    this.diminuirPreço(valor);
   }
 }
