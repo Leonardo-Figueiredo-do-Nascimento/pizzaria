@@ -4,6 +4,6 @@ export class Pedido {
     constructor(
         public endereço: string,
         public pizzas: Pizza[],
-        public preçoTotal: number
+        public precoTotal: number
     ){}
 }

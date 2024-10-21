@@ -9,16 +9,16 @@ export class PizzaService {
     sabor: '',
     tamanho: '',
     adicionais: [],
-    preço: 0.00
+    preco: 0.00
   }
   
   constructor() {}
   
   aumentarPreço(valor:number){
-    this.pizza.preço += valor;
+    this.pizza.preco += valor;
   }
   diminuirPreço(valor:number){
-    this.pizza.preço -= valor;
+    this.pizza.preco -= valor;
   }
   setSabor(sabor:string,valor:number){
     this.pizza.sabor = sabor;

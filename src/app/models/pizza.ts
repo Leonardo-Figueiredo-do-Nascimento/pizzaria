@@ -3,6 +3,6 @@ export class Pizza {
         public sabor: string,
         public tamanho: string,
         public adicionais: string[],
-        public preço: number
+        public preco: number
     ){}
 }
