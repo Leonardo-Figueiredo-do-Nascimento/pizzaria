@@ -80,6 +80,10 @@
     color: white;
     cursor: pointer;
 }
+#add-button.added {
+    background-color: white;
+    color: green;
+}
 #minus-button{
     height: 3vh;
     width: 5vw;

@@ -3,12 +3,12 @@ import { PedidoService } from '../../services/pedido.service';
 import { PizzaService } from '../../services/pizza.service';
 import { MenuComponent } from '../menu/menu.component';
 import { SizeComponent } from '../size/size.component';
-import { Pizza } from '../../models/pizza';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-personalize',
   standalone: true,
-  imports: [],
+  imports: [NgClass],
   templateUrl: './personalize.component.html',
   styleUrl: './personalize.component.css'
 })
@@ -28,7 +28,9 @@ export class PersonalizeComponent {
   removeIngredient(ingrediente:string){
     this.adicionaisAUX = this.adicionaisAUX.filter(item => item.ingrediente !== ingrediente);
   }
-
+  isIngredientAdded(ingrediente: string): boolean {
+    return this.adicionaisAUX.some(item => item.ingrediente === ingrediente);
+  }
   concluirPizza():void{
     if (this.menuComponent.selectedPizza) {
       const { sabor, valor } = this.menuComponent.selectedPizza;
