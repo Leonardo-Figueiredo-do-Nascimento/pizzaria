@@ -34,7 +34,12 @@ export class PizzaService {
       this.aumentarPreço(ingredienteObj.valor);
     });
   }
-
+  resetPizza(){
+    this.pizza.sabor ='',
+    this.pizza.tamanho ='',
+    this.pizza.adicionais =[],
+    this.pizza.preco = 0.00
+  }
   getPizza():Pizza{
     return this.pizza;
   }

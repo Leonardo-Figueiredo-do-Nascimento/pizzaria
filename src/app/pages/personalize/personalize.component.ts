@@ -44,5 +44,10 @@ export class PersonalizeComponent {
     const pizza = this.pizzaService.getPizza()
 
     this.pedidoService.adicionarPizza(pizza,pizza.preco)
+
+    //Vai resetar a pizza
+    this.pizzaService.resetPizza();
+    this.menuComponent.selectedPizza = null;
+    this.sizeComponent.sizeSelected = null;
   }
 }
