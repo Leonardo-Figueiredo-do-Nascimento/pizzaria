@@ -20,6 +20,7 @@ export class PersonalizeComponent {
     private menuComponent: MenuComponent,
     private sizeComponent: SizeComponent
   ) {}
+  
   adicionaisAUX: {ingrediente:string, valor: number}[] = [];
 
   addIngredient(ingrediente:string, valor:number){

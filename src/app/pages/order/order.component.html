@@ -1,1 +1,7 @@
-<p>order works!</p>
+<div class="ordem-div">
+    <h2>Endereço</h2>
+    <input type="text" [(ngModel)]="novoEndereco">
+    <div *ngFor="let pizza of pedido.pizzas">
+        <p>{{pizza.sabor}} : {{pizza.preco}}</p>
+    </div>
+</div>

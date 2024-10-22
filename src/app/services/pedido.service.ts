@@ -23,7 +23,10 @@ export class PedidoService {
     this.pedido.precoTotal += preço;
     this.pedidoSubject.next(this.pedido);
   }
-
+  atualizarEndereco(endereco: string) {
+    this.pedido.endereço = endereco;
+    this.pedidoSubject.next(this.pedido); 
+  }
   getPedido(): Pedido {
     return this.pedido;
   }
