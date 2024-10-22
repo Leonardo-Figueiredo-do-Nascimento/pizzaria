@@ -23,10 +23,14 @@ export class PersonalizeComponent {
   adicionaisAUX: {ingrediente:string, valor: number}[] = [];
 
   addIngredient(ingrediente:string, valor:number){
-    this.adicionaisAUX.push({ingrediente,valor})
+    if(!this.isIngredientAdded(ingrediente)){
+      this.adicionaisAUX.push({ingrediente,valor})
+    }
   }
   removeIngredient(ingrediente:string){
-    this.adicionaisAUX = this.adicionaisAUX.filter(item => item.ingrediente !== ingrediente);
+    if(this.isIngredientAdded(ingrediente)){
+      this.adicionaisAUX = this.adicionaisAUX.filter(item => item.ingrediente !== ingrediente);
+    }
   }
   isIngredientAdded(ingrediente: string): boolean {
     return this.adicionaisAUX.some(item => item.ingrediente === ingrediente);
