@@ -50,7 +50,7 @@ export class PersonalizeComponent {
 
     const pizza = this.pizzaService.getPizza()
 
-    this.pedidoService.adicionarPizza(pizza,pizza.preco)
+    this.pedidoService.adicionarPizza(this.pizzaService.criarPizza(pizza.sabor,pizza.tamanho,pizza.adicionais,pizza.preco))
 
     //Vai resetar a pizza
     this.pizzaService.resetPizza();

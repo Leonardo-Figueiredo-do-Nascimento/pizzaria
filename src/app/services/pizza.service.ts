@@ -40,6 +40,9 @@ export class PizzaService {
     this.pizza.adicionais =[],
     this.pizza.preco = 0.00
   }
+  criarPizza(sabor:string,tamanho:string,adicionais:string[],preco:number):Pizza{
+    return new Pizza(sabor, tamanho, adicionais, preco);
+  }
   getPizza():Pizza{
     return this.pizza;
   }

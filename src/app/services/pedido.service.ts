@@ -18,9 +18,9 @@ export class PedidoService {
 
   constructor() { }
 
-  adicionarPizza(pizza: Pizza, preço: number) {
+  adicionarPizza(pizza: Pizza) {
     this.pedido.pizzas.push(pizza);
-    this.pedido.precoTotal += preço;
+    this.pedido.precoTotal += pizza.preco;
     this.pedidoSubject.next(this.pedido);
   }
   atualizarEndereco(endereco: string) {
