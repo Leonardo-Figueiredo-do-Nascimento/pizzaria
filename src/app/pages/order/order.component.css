@@ -7,13 +7,83 @@
     justify-content: center;
     align-items: center;
 }
-.ordem-div h2{
+.ordem-pedido{
+    height: auto;
+    min-height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.ordem-pedido h2{
     height: auto;
     width: auto;
-    font-size: 4vw;
+    margin-top: 3vh;
+    font-size: 3vw;
+}
+.ordem-pedido input{
+    height: 3vh;
+    width: 40vw;
+    padding: 0.2vw;
+    font-size: 1vw;
+    margin-top: 1vh;
 }
 
-.ordem-div input{
+.pizza-div{
+    height: auto;
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pizza-card{
+    height: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+}
+
+#pizza-index{
     height: auto;
     width: auto;
+    padding: 1vw;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 2vw;
+    border: 0.1vh black solid;
+    background-color: gray;
+    color: white;
+}
+#pizza-sabor{
+    height: auto;
+    width: auto;
+    padding: 1vw;
+    font-size: 2vw;
+}
+#pizza-ingredientes{
+    height: auto;
+    width: auto;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+}
+#ingrediente{
+    height: auto;
+    width: auto;
+    color: white;
+    background-color: red;
+
+}
+#pizza-preço{
+    height: auto;
+    width: auto;
+    font-size: 2vw;
 }

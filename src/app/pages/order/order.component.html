@@ -1,7 +1,19 @@
 <div class="ordem-div">
-    <h2>Endereço</h2>
-    <input type="text" [(ngModel)]="novoEndereco">
-    <div *ngFor="let pizza of pedido.pizzas">
-        <p>{{pizza.sabor}} : {{pizza.preco}}</p>
+    <div class="ordem-pedido">
+        <h2>Endereço</h2>
+        <hr>
+        <input type="text" [(ngModel)]="novoEndereco">
+        <h2>Pizzas</h2>
+        <hr>
+        <div class="pizza-div" *ngFor="let pizza of pedido.pizzas; let i = index">
+            <div class="pizza-card">
+                <p id="pizza-index">{{i+1}}</p>
+                <p id="pizza-sabor">{{pizza.sabor}}</p>
+                <div id="pizza-ingredientes">
+                    <p id="ingrediente" *ngFor="let ingrediente of pizza.adicionais">{{ingrediente}}</p>
+                </div>
+            </div>
+            <p id="pizza-preço">{{pizza.preco | currency:'BRL'}}</p>
+        </div>
     </div>
 </div>
