@@ -24,7 +24,15 @@ export class OrderComponent implements OnInit{
     this.pedido = this.pedidoService.getPedido();
     console.log(this.pedido)
   }
- 
+
+  deletarPizza(index: number) {
+    if (confirm("Deseja deletar a pizza do seu pedido?")) {
+      const pizzaRemovida = this.pedido.pizzas.splice(index, 1)[0];
+      this.pedido.precoTotal -= pizzaRemovida.preco;
+      this.pedidoService.atualizarPedido(this.pedido);
+    }
+  }
+  
   finalizarPedido(){
     if(this.novoEndereco != ''){
       confirm("Quer mesmo finalizar o pedido?");

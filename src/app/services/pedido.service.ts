@@ -27,6 +27,9 @@ export class PedidoService {
     this.pedido.endereço = endereco;
     this.pedidoSubject.next(this.pedido); 
   }
+  atualizarPedido(pedido: any) {
+    this.pedidoSubject.next(pedido);
+  }
   getPedido(): Pedido {
     return this.pedido;
   }
