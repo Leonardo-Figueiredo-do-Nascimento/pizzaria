@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
     align-items: center;
 }
 .ordem-pedido{
@@ -15,6 +16,8 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    position: relative;
+    overflow-x: visible;
 }
 .ordem-pedido h2{
     height: auto;
@@ -29,7 +32,7 @@
     font-size: 1vw;
     margin-top: 1vh;
 }
-.pizza-div{
+.pizza-div {
     height: auto;
     width: 100%;
     margin-top: 2vh;
@@ -37,11 +40,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 0;
+    position: relative;
+    overflow-x: visible;
+    z-index: 1;
 }
-#deletar-button{
+
+#deletar-button {
     height: 6vh;
-    width: 8vh;
+    width: 6vh;
+    border-radius: 100vh;
+    padding-bottom: 0.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,15 +57,20 @@
     background-color: red;
     color: white;
     position: absolute;
-    left: 10vh;
-    z-index: 10;
+    overflow: hidden;
+    left: -10vh; 
+    z-index: 100; 
 }
-.pizza-card{
+
+.pizza-card {
     height: auto;
     width: 80%;
     display: grid;
-    grid-template-columns: auto 1fr ;
-    grid-template-rows: repeat(3,auto);
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(3, auto);
+    z-index: 0;
+    position: relative;
+    overflow-x: visible;
 }
 #pizza-index{
     height: auto;
@@ -117,6 +130,7 @@
     width: 10vw;
     align-self: center;
     margin-top: 5vw;
+    margin-bottom: 5vw;
     font-size: 1.5vw;
     color: white;
     background-color: rgb(46, 141, 22);

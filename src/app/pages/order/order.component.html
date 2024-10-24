@@ -6,8 +6,8 @@
         <h2>Pizzas</h2>
         <hr>
         <div class="pizza-div" *ngFor="let pizza of pedido.pizzas; let i = index">
-            <button id="deletar-button" (click)="deletarPizza(i)">-</button>
             <div class="pizza-card">
+                <button id="deletar-button" (click)="deletarPizza(i)">-</button>
                 <p id="pizza-index">{{i+1}}</p>
                 <p id="pizza-sabor">{{pizza.sabor}} {{pizza.tamanho}}</p>
                 <div id="pizza-ingredientes" *ngIf="pizza.adicionais.length > 0">
