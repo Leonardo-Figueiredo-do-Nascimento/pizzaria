@@ -29,7 +29,6 @@
     font-size: 1vw;
     margin-top: 1vh;
 }
-
 .pizza-div{
     height: auto;
     width: 100%;
@@ -39,22 +38,22 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .pizza-card{
     height: auto;
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: auto 1fr ;
     grid-template-rows: repeat(3,auto);
 }
-
 #pizza-index{
     height: auto;
     width: auto;
+    text-align: center;
     padding: 1vw;
     grid-column: 1/2;
     grid-row: 1/2;
     font-size: 2vw;
+    border-radius: 2vh 0 0 0;
     border: 0.1vh black solid;
     background-color: gray;
     color: white;
@@ -62,28 +61,60 @@
 #pizza-sabor{
     height: auto;
     width: auto;
+    text-align: center;
+    border-radius: 0 2vh 0 0;
+    border: 0.1vh black solid;
     padding: 1vw;
     font-size: 2vw;
+    background-color: red;
+    color: white;
 }
 #pizza-ingredientes{
     height: auto;
     width: auto;
+    padding: 2vw;
+    border: 0.1vh black solid;
+    border-radius: 0 0 2vh 2vh;
     grid-column: 1/-1;
     grid-row: 2/3;
     background-color: green;
     display: grid;
     grid-template-columns: repeat(3,auto);
     grid-template-rows: repeat(3,auto);
+    gap: 1vw;
 }
-#ingrediente{
-    height: auto;
-    width: auto;
-    color: white;
-    background-color: red;
-
+#ingrediente {
+    background-color: rgb(31, 31, 31);
+    color: aliceblue;
+    padding: 0.1vw 1vw;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    display: inline-block;
 }
 #pizza-preço{
     height: auto;
     width: auto;
     font-size: 2vw;
+}
+#final-button{
+    height: 5vw;
+    width: 10vw;
+    align-self: center;
+    margin-top: 5vw;
+    font-size: 1.5vw;
+    color: white;
+    background-color: rgb(46, 141, 22);
+    border: 0.2vw solid white ;
+    border-radius: 3vh;
+    cursor: pointer;
+}
+#final-button:hover{
+    background-color: white;
+    color: rgb(46, 141, 22);
+    transition: 1s;
+}
+#final-button:active{
+    background-color: black;
+    color: white;
+    transition: 0.1s;
 }
