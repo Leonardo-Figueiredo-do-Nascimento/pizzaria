@@ -1,4 +1,5 @@
-.size-div{
+@media (min-width:1025px){
+    .size-div{
     height: 60vh;
     width: 100vw;
     display: flex;
@@ -8,51 +9,52 @@
     background-color: rgb(39, 39, 39);
     padding: 5vw;
     z-index: -1;
-}
-.tamanhos{
-    height: 30vh;
-    width: 20vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.tamanho-select{
-    height: auto;
-    width: 15vw;
-    background-color: rgb(65, 245, 104);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5vw;
-}
-#brotinho{
-    height: 4.5vw;
-    width: 4.5vw;
-}
-#média{
-    height: 6.5vw;
-    width: 6.5vw;
-}
-#grande{
-    height: 10vw;
-    width: 10vw;
-}
-.tamanho-select input{
-    height: 3vh;
-    width: 3vh;
-}
-.tamanhos h3{
-    height: auto;
-    width: auto;
-    font-size: 2.5vw;
-    color: white;
-    overflow-y: hidden;
-}
-.tamanho-select p{
-    height: auto;
-    width: auto;
-    font-size: 1.8vw;
-    overflow-y: hidden;
+    }
+    .tamanhos{
+        height: 30vh;
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .tamanho-select{
+        height: auto;
+        width: 15vw;
+        background-color: rgb(65, 245, 104);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5vw;
+    }
+    #brotinho{
+        height: 4.5vw;
+        width: 4.5vw;
+    }
+    #média{
+        height: 6.5vw;
+        width: 6.5vw;
+    }
+    #grande{
+        height: 10vw;
+        width: 10vw;
+    }
+    .tamanho-select input{
+        height: 3vh;
+        width: 3vh;
+    }
+    .tamanhos h3{
+        height: auto;
+        width: auto;
+        font-size: 2.5vw;
+        color: white;
+        overflow-y: hidden;
+    }
+    .tamanho-select p{
+        height: auto;
+        width: auto;
+        font-size: 1.8vw;
+        overflow-y: hidden;
+    }
 }
