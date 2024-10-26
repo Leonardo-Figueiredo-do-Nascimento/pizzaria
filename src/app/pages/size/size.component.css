@@ -1,18 +1,136 @@
-@media (max-width:520px){}
+@media (max-width:520px){
+    .size-div{
+        height: 45vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-around;
+        background-color: rgb(39, 39, 39);
+        padding: 5vw;
+        z-index: -1;
+    }
+    .tamanhos{
+        height: 20vh;
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .tamanho-select{
+        height: auto;
+        width: 28vw;
+        background-color: rgb(65, 245, 104);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5vw;
+    }
+    #brotinho{
+        height: 13vw;
+        width: 13vw;
+    }
+    #média{
+        height: 18vw;
+        width: 18vw;
+    }
+    #grande{
+        height: 22vw;
+        width: 22vw;
+    }
+    .tamanho-select input{
+        height: 3vh;
+        width: 3vh;
+    }
+    .tamanhos h3{
+        height: auto;
+        width: auto;
+        font-size: 5vw;
+        color: white;
+        overflow-y: hidden;
+    }
+    .tamanho-select p{
+        height: auto;
+        width: auto;
+        font-size: 4vw;
+        overflow-y: hidden;
+    }
+}
 
-@media (min-width:521px) and (max-width:1024px){}
+@media (min-width:521px) and (max-width:1024px){
+    .size-div{
+        height: 60vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-around;
+        background-color: rgb(39, 39, 39);
+        padding: 5vw;
+        z-index: -1;
+    }
+    .tamanhos{
+        height: 30vh;
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .tamanho-select{
+        height: auto;
+        width: 28vw;
+        background-color: rgb(65, 245, 104);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5vw;
+    }
+    #brotinho{
+        height: 11vw;
+        width: 11vw;
+    }
+    #média{
+        height: 15vw;
+        width: 15vw;
+    }
+    #grande{
+        height: 20vw;
+        width: 20vw;
+    }
+    .tamanho-select input{
+        height: 4vw;
+        width: 4vw;
+    }
+    .tamanhos h3{
+        height: auto;
+        width: auto;
+        font-size: 3vw;
+        color: white;
+        overflow-y: hidden;
+    }
+    .tamanho-select p{
+        height: auto;
+        width: auto;
+        font-size: 3vw;
+        overflow-y: hidden;
+    }
+}
 
 @media (min-width:1025px){
     .size-div{
-    height: 60vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: space-around;
-    background-color: rgb(39, 39, 39);
-    padding: 5vw;
-    z-index: -1;
+        height: 60vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-around;
+        background-color: rgb(39, 39, 39);
+        padding: 5vw;
+        z-index: -1;
     }
     .tamanhos{
         height: 30vh;
