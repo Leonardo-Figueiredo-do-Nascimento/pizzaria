@@ -1,6 +1,6 @@
-@media (max-width:425px){}
+@media (max-width:520px){}
 
-@media (min-width:426px)and(max-width:1024px){}
+@media (min-width:521px) and (max-width:1024px){}
 
 @media (min-width:1025px){
     .personalize-div{
