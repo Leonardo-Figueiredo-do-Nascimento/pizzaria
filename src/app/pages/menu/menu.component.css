@@ -1,7 +1,133 @@
-@media (max-width:520px){}
-
-@media (min-width:521px) and (max-width:1024px){}
-
+@media (max-width:520px){
+    .menu-div{
+        height: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(39, 39, 39);
+        padding: 5vw;
+        z-index: -1;
+    }
+    .menu-div h2{
+        height: 10vh;
+        width: auto;
+        color: white;
+        font-size: 13vw;
+        margin-bottom: 5vh;
+        overflow-y: hidden;
+    }
+    .sabores{
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        row-gap: 3vh;
+        column-gap: 2vw;
+        grid-template-rows: repeat(3,auto);
+    }
+    .pizza-card{
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 2vh 2vh 0 0;
+        background-color: rgb(78, 126, 59);
+    }
+    .pizza-card input{
+        height: 10vw;
+        width: 10vw;
+        margin: 2vh 0 2vh 0;
+    }
+    .pizza-card img, #h3-personalizavel{
+        height: 20vh;
+        width: 44vw;
+        border: 0.5vh solid white;
+        border-radius: 2vh 2vh 0 0;
+    }
+    #h3-personalizavel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15vw;
+        color: white;
+        overflow-y: hidden;
+    }
+    .pizza-card p{
+        height: auto;
+        width: auto;
+        font-size: 6.5vw;
+        color: white;
+        text-align: center;
+    }
+}
+@media (min-width:521px) and (max-width:1024px){
+    .menu-div{
+        height: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(39, 39, 39);
+        padding: 5vw;
+        z-index: -1;
+    }
+    .menu-div h2{
+        height: 10vh;
+        width: auto;
+        color: white;
+        font-size: 5vw;
+        margin-bottom: 5vh;
+        overflow-y: hidden;
+    }
+    .sabores{
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(3,2fr);
+        row-gap: 3vh;
+        column-gap: 2vw;
+        grid-template-rows: repeat(2,auto);
+    }
+    .pizza-card{
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 2vh 2vh 0 0;
+        background-color: rgb(78, 126, 59);
+    }
+    .pizza-card input{
+        height: 5vw;
+        width: 5vw;
+        margin: 2vh 0 2vh 0;
+    }
+    .pizza-card img, #h3-personalizavel{
+        height: 20vh;
+        width: 28.5vw;
+        border: 0.5vh solid white;
+        border-radius: 2vh 2vh 0 0;
+    }
+    #h3-personalizavel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15vw;
+        color: white;
+        overflow-y: hidden;
+    }
+    .pizza-card p{
+        height: auto;
+        width: auto;
+        font-size: 4vw;
+        color: white;
+        text-align: center;
+    }
+}
 @media (min-width:1025px){
     .menu-div{
     height: auto;
