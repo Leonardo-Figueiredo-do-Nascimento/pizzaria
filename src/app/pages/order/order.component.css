@@ -294,6 +294,7 @@
         transition: 0.1s;
     }
 }
+<<<<<<< HEAD
 @media (min-width:1025px){
     .ordem-div{
         height: auto;
@@ -441,4 +442,135 @@
         color: white;
         transition: 0.1s;
     }
+=======
+.ordem-pedido h2{
+    height: auto;
+    width: auto;
+    margin-top: 3vh;
+    font-size: 3vw;
+}
+.ordem-pedido input{
+    height: 3vh;
+    width: 40vw;
+    padding: 0.2vw;
+    font-size: 1vw;
+    margin-top: 1vh;
+}
+.pizza-div {
+    height: auto;
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow-x: visible;
+    z-index: 1;
+}
+
+#deletar-button {
+    height: 6vh;
+    width: 6vh;
+    align-self: center;
+    border-radius: 100vh;
+    padding-bottom: 0.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    background-color: red;
+    color: white;
+    position: absolute;
+    overflow: hidden;
+    left: -10vh; 
+    z-index: 100; 
+}
+
+.pizza-card {
+    height: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(3, auto);
+    z-index: 0;
+    position: relative;
+    overflow-x: visible;
+}
+#pizza-index{
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 1vw;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 2vw;
+    border-radius: 2vh 0 0 0;
+    border: 0.1vh black solid;
+    background-color: gray;
+    color: white;
+}
+#pizza-sabor{
+    height: auto;
+    width: auto;
+    text-align: center;
+    border-radius: 0 2vh 0 0;
+    border: 0.1vh black solid;
+    padding: 1vw;
+    font-size: 2vw;
+    background-color: red;
+    color: white;
+}
+#pizza-ingredientes{
+    height: auto;
+    width: auto;
+    padding: 2vw;
+    border: 0.1vh black solid;
+    border-radius: 0 0 2vh 2vh;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+    gap: 1vw;
+}
+
+#ingrediente {
+    background-color: rgb(31, 31, 31);
+    color: aliceblue;
+    padding: 0.1vw 1vw;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    display: inline-block;
+}
+#pizza-preço{
+    height: auto;
+    width: auto;
+    font-size: 2vw;
+}
+
+#final-button{
+    height: 5vw;
+    width: 10vw;
+    align-self: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    font-size: 1.5vw;
+    color: white;
+    background-color: rgb(46, 141, 22);
+    border: 0.2vw solid white ;
+    border-radius: 3vh;
+    cursor: pointer;
+}
+#final-button:hover{
+    background-color: white;
+    color: rgb(46, 141, 22);
+    transition: 1s;
+}
+#final-button:active{
+    background-color: black;
+    color: white;
+    transition: 0.1s;
+>>>>>>> 8db612bc9b6646197a133750303227b3f7152b00
 }
