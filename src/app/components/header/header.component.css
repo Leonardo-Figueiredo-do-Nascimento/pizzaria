@@ -1,3 +1,129 @@
+@media (max-width:520px){
+    .header{
+        height: 10vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(187, 114, 19);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    a{
+        height: auto;
+        width: auto;
+        overflow: hidden;
+    }
+    #pizza-logo{
+        height: 10vh;
+        width: 24vw;
+        cursor: pointer;
+    }
+    .delivery-div{
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #pedido-counter{
+        height: 3vh;
+        width: 3.5vh;
+        background-color: red;
+        border-radius: 100vh;
+        font-family: sans-serif;
+        font-size: 1.8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-right:12%;
+        margin-bottom: 7%;
+
+    }
+    #pedido-counter p{
+        height: auto;
+        width: auto;
+        color: aliceblue;
+    }
+    #delivery-button{
+        height: auto;
+        width: auto;
+        border-radius: 100vh;
+        background-color: transparent;
+        border: none;
+        margin-right: 5vw;
+        cursor: pointer;
+    }
+    #delivery-img{
+        height: 7vh;
+        width: 20vw;
+    }
+}
+
+@media (min-width:521px) and (max-width:1024px){
+    .header{
+        height: 10vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(187, 114, 19);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    a{
+        height: auto;
+        width: auto;
+        overflow: hidden;
+    }
+    #pizza-logo{
+        height: 10vh;
+        width: 15vw;
+        cursor: pointer;
+    }
+    .delivery-div{
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #pedido-counter{
+        height: 3vh;
+        width: 3.5vh;
+        background-color: red;
+        border-radius: 100vh;
+        font-family: sans-serif;
+        font-size: 1.8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-right:8%;
+        margin-bottom: 3%;
+
+    }
+    #pedido-counter p{
+        height: auto;
+        width: auto;
+        color: aliceblue;
+    }
+    #delivery-button{
+        height: auto;
+        width: auto;
+        border-radius: 100vh;
+        background-color: transparent;
+        border: none;
+        margin-right: 5vw;
+        cursor: pointer;
+    }
+    #delivery-img{
+        height: 7vh;
+        width: 10vw;
+    }
+}
+
 @media (min-width:1025px){
     .header{
         height: 10vh;
