@@ -9,7 +9,7 @@ import { Pizza } from '../models/pizza';
 export class PedidoService {
   
   private pedido: Pedido = { 
-    endereço: '',
+    endereco: '',
     pizzas: [],  
     precoTotal: 0.00 
   };
@@ -24,7 +24,7 @@ export class PedidoService {
     this.pedidoSubject.next(this.pedido);
   }
   atualizarEndereco(endereco: string) {
-    this.pedido.endereço = endereco;
+    this.pedido.endereco = endereco;
     this.pedidoSubject.next(this.pedido); 
   }
   atualizarPedido(pedido: any) {

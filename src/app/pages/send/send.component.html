@@ -1,0 +1,19 @@
+<div class="envio-div">
+    <div class="envio-container">
+        <h2>Endereço</h2>
+        <hr>
+        <p id="envio-endereço">{{pedido.endereco}}</p>
+        <h2>Pizzas</h2>
+        <hr>
+        <div class="pizza-div" *ngFor="let pizza of pedido.pizzas; let i = index">
+            <div class="pizza-card">
+                <p id="pizza-index">{{i+1}}</p>
+                <p id="pizza-sabor">{{pizza.sabor}} {{pizza.tamanho}}</p>
+                <div id="pizza-ingredientes" *ngIf="pizza.adicionais.length > 0">
+                    <p id="ingrediente" *ngFor="let ingrediente of pizza.adicionais">+ {{ingrediente}}</p>
+                </div>
+            </div>
+        </div>        
+        <button id="envio-button" (click)="enviarPedido()">Enviar pedido</button>
+    </div>
+</div>

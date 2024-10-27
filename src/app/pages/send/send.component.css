@@ -1,0 +1,411 @@
+#envio-button:hover{
+    background-color: white;
+    color: rgb(46, 141, 22);
+    transition: 1s;
+}
+#envio-button:active{
+    background-color: black;
+    color: white;
+    transition: 0.1s;
+}
+
+@media (max-width:768px){
+    .envio-div{
+        height: auto;
+        min-height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+    }
+    .envio-container{
+        height: auto;
+        min-height: 100vh;
+        width: 65vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        position: relative;
+        overflow-x: visible;
+    }
+    .envio-container h2{
+        height: auto;
+        width: auto;
+        margin-top: 3vh;
+        font-size: 6vw;
+    }
+    #envio-endereço{
+        height: auto;
+        width: 65vw;
+        padding: 1vw;
+        font-size: 4.5vw;
+        margin-top: 1vh;
+    }
+    .pizza-div {
+        height: auto;
+        width: 100%;
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        overflow-x: visible;
+        z-index: 1;
+    }
+    #deletar-button {
+        height: 7vw;
+        width: 7vw;
+        padding-bottom: 0.7vw;
+        border-radius: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 6vw;
+        background-color: red;
+        color: white;
+        position: absolute;
+        overflow: hidden;
+        left: -10vw; 
+        z-index: 100; 
+    }
+    .pizza-card {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: repeat(3, auto);
+        z-index: 0;
+        position: relative;
+        overflow-x: visible;
+    }
+    #pizza-index{
+        height: auto;
+        width: auto;
+        text-align: center;
+        padding: 1vw;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: 5vw;
+        border-radius: 2vw 0 0 0;
+        border: 0.1vh black solid;
+        background-color: gray;
+        color: white;
+    }
+    #pizza-sabor{
+        height: auto;
+        width: auto;
+        text-align: center;
+        border-radius: 0 2vw 0 0;
+        border: 0.1vh black solid;
+        padding: 1vw;
+        font-size: 4vw;
+        background-color: red;
+        color: white;
+    }
+    #pizza-ingredientes{
+        height: auto;
+        width: auto;
+        padding: 2vw;
+        border: 0.1vh black solid;
+        border-radius: 0 0 2vw 2vw;
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        background-color: green;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(5,auto);
+        gap: 1vw;
+    }
+    #ingrediente {
+        background-color: rgb(31, 31, 31);
+        color: aliceblue;
+        padding: 1vw 1vw;
+        border-radius: 5px;
+        font-size: 3.5vw;
+        display: inline-block;
+    }
+    #pizza-preço{
+        height: auto;
+        width: auto;
+        font-size: 3.7vw;
+    }
+    #envio-button{
+        height: 20vw;
+        width: 25vw;
+        align-self: center;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        font-size: 5vw;
+        color: white;
+        background-color: rgb(46, 141, 22);
+        border: 0.2vw solid white ;
+        border-radius: 3vh;
+        cursor: pointer;
+    }
+}
+@media (min-width:769px) and (max-width:1024px){
+    .envio-div{
+        height: auto;
+        min-height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+    }
+    .envio-container{
+        height: auto;
+        min-height: 100vh;
+        width: 65vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        position: relative;
+        overflow-x: visible;
+    }
+    .envio-container h2{
+        height: auto;
+        width: auto;
+        margin-top: 3vh;
+        font-size: 6vw;
+    }
+    #envio-endereço{
+        height: auto;
+        width: 65vw;
+        padding: 1.5vw;
+        font-size: 3.5vw;
+        margin-top: 1vh;
+    }
+    .pizza-div {
+        height: auto;
+        width: 100%;
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        overflow-x: visible;
+        z-index: 1;
+    }
+    #deletar-button {
+        height: 7vw;
+        width: 7vw;
+        padding-bottom: 0.7vw;
+        border-radius: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 6vw;
+        background-color: red;
+        color: white;
+        position: absolute;
+        overflow: hidden;
+        left: -10vw; 
+        z-index: 100; 
+    }
+    .pizza-card {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: repeat(3, auto);
+        z-index: 0;
+        position: relative;
+        overflow-x: visible;
+    }
+    #pizza-index{
+        height: auto;
+        width: auto;
+        text-align: center;
+        padding: 1vw;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: 5vw;
+        border-radius: 2vw 0 0 0;
+        border: 0.1vh black solid;
+        background-color: gray;
+        color: white;
+    }
+    #pizza-sabor{
+        height: auto;
+        width: auto;
+        text-align: center;
+        border-radius: 0 2vw 0 0;
+        border: 0.1vh black solid;
+        padding: 1vw;
+        font-size: 4vw;
+        background-color: red;
+        color: white;
+    }
+    #pizza-ingredientes{
+        height: auto;
+        width: auto;
+        padding: 2vw;
+        border: 0.1vh black solid;
+        border-radius: 0 0 2vw 2vw;
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        background-color: green;
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(3,auto);
+        gap: 1vw;
+    }
+    #ingrediente {
+        background-color: rgb(31, 31, 31);
+        color: aliceblue;
+        padding: 1vw 1vw;
+        border-radius: 5px;
+        font-size: 2vw;
+        display: inline-block;
+    }
+    #pizza-preço{
+        height: auto;
+        width: auto;
+        font-size: 3.7vw;
+    }
+    #envio-button{
+        height: 12vw;
+        width: 16vw;
+        align-self: center;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        font-size: 3.5vw;
+        color: white;
+        background-color: rgb(46, 141, 22);
+        border: 0.2vw solid white ;
+        border-radius: 3vh;
+        cursor: pointer;
+    }
+}
+@media (min-width:1025px){
+    .envio-div{
+        height: auto;
+        min-height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+    }
+    .envio-container{
+        height: auto;
+        min-height: 100vh;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        position: relative;
+        overflow-x: visible;
+    }
+    .envio-container h2{
+        height: auto;
+        width: auto;
+        margin-top: 3vh;
+        font-size: 3vw;
+    }
+    #envio-endereço{
+        height: auto;
+        width: 40vw;
+        padding: 0.2vw;
+        font-size: 3vw;
+        margin-top: 1vh;
+    }
+    .pizza-div {
+        height: auto;
+        width: 100%;
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        overflow-x: visible;
+        z-index: 1;
+    }
+    .pizza-card {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: repeat(3, auto);
+        z-index: 0;
+        position: relative;
+        overflow-x: visible;
+    }
+    #pizza-index{
+        height: auto;
+        width: auto;
+        text-align: center;
+        padding: 1vw;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: 2vw;
+        border-radius: 2vh 0 0 0;
+        border: 0.1vh black solid;
+        background-color: gray;
+        color: white;
+    }
+    #pizza-sabor{
+        height: auto;
+        width: auto;
+        text-align: center;
+        border-radius: 0 2vh 0 0;
+        border: 0.1vh black solid;
+        padding: 1vw;
+        font-size: 2vw;
+        background-color: red;
+        color: white;
+    }
+    #pizza-ingredientes{
+        height: auto;
+        width: auto;
+        padding: 2vw;
+        border: 0.1vh black solid;
+        border-radius: 0 0 2vh 2vh;
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        background-color: green;
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(3,auto);
+        gap: 1vw;
+    }
+
+    #ingrediente {
+        background-color: rgb(31, 31, 31);
+        color: aliceblue;
+        padding: 0.1vw 1vw;
+        border-radius: 5px;
+        font-size: 1.2vw;
+        display: inline-block;
+    }
+    #pizza-preço{
+        height: auto;
+        width: auto;
+        font-size: 2vw;
+    }
+
+    #envio-button{
+        height: 5vw;
+        width: 15vw;
+        align-self: center;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        font-size: 1.5vw;
+        color: white;
+        background-color: rgb(46, 141, 22);
+        border: 0.2vw solid white ;
+        border-radius: 3vh;
+        cursor: pointer;
+    }
+}

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PedidoService } from '../../services/pedido.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule, NgIf } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-order',
@@ -17,7 +18,8 @@ export class OrderComponent implements OnInit{
   pedido: any;
   
   constructor(
-    private pedidoService: PedidoService
+    private pedidoService: PedidoService,
+    private router:Router
   ) {}
 
   ngOnInit(): void {
@@ -35,7 +37,10 @@ export class OrderComponent implements OnInit{
   
   finalizarPedido(){
     if(this.novoEndereco != ''){
-      confirm("Quer mesmo finalizar o pedido?");
+      this.pedidoService.atualizarEndereco(this.novoEndereco);
+      if(confirm("Quer mesmo finalizar o pedido?")){
+        this.router.navigate(['./envio'])
+      };
     } else{
       alert("Preencha o seu endereço!");
     }
