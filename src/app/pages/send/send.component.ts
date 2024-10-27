@@ -1,6 +1,7 @@
 import { CommonModule, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { PedidoService } from '../../services/pedido.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-send',
@@ -14,7 +15,8 @@ export class SendComponent {
   pedido: any;
   
   constructor(
-    private pedidoService: PedidoService
+    private pedidoService: PedidoService,
+    private router:Router
   ) {}
 
   ngOnInit(): void {
@@ -22,6 +24,8 @@ export class SendComponent {
     console.log(this.pedido)
   }
   enviarPedido(){
-
+    this.router.navigate(['/']).then(() => {
+      window.location.reload();
+    });
   }
 }
